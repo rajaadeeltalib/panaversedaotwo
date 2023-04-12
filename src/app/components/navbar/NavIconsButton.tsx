@@ -12,7 +12,7 @@ let currentTheme = theme === "system"? systemTheme : theme;
         <BiBell />
         <p className="-mt-2">|</p>
         {
-          currentTheme =="dark"? (<BsFillSunFill onClick={()=> setTheme("light")}/>):(<BiMoon  onClick={()=> setTheme("dark")}/>)
+          currentTheme =="light"? (<BiMoon onClick={()=> setTheme("dark")}/>):(<BsFillSunFill  onClick={()=> setTheme("light")}/>)
         }
         
         
